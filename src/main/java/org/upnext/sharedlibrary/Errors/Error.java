@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class Error {
     String code;
     String message;
-    HttpStatus statusCode;
+    Integer statusCode;
 
     public static final Error NONE = new Error("", "", null);
 }
