@@ -9,6 +9,7 @@ public class Result<T> {
         }
         this.value = value;
         this.isSuccess = isSuccess;
+        this.isFailure = !isSuccess;
         this.error = error;
     }
 
@@ -17,7 +18,7 @@ public class Result<T> {
     @Getter
     private boolean isSuccess;
     @Getter
-    private boolean isFailure = !isSuccess;
+    private Boolean isFailure;
     @Getter
     private Error error = null;
 
