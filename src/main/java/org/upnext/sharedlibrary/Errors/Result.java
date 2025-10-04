@@ -16,7 +16,7 @@ public class Result<T> {
     @Getter
     private T value;
     @Getter
-    private Boolean isSuccess;
+    private boolean isSuccess;
     @Getter
     private Boolean isFailure;
     @Getter
@@ -24,7 +24,7 @@ public class Result<T> {
 
 
     public static Result<Void> success() {
-        return new Result<>(null, true, null);
+        return new Result<>(null, true, Error.NONE);
     }
 
 //    public static Result<Void> failure(Error error) {
