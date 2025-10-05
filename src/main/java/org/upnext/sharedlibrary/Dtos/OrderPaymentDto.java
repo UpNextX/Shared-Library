@@ -13,6 +13,6 @@ import org.upnext.sharedlibrary.Enums.PaymentStatus;
 public class OrderPaymentDto {
     private Long orderId;
     private Long userId;
-    private Integer totalCost;
+    private Double totalCost;
     private PaymentStatus paymentStatus;
 }

@@ -16,7 +16,7 @@ import java.util.List;
 public class OrderDto {
     Long orderId;
     Long userId;
-    Long totalCost;
+    Double totalCost;
     PaymentStatus paymentStatus;
     OrderStatus orderStatus;
     PaymentMethod paymentMethod;
