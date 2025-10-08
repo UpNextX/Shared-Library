@@ -1,4 +1,5 @@
 package org.upnext.sharedlibrary.Dtos;
+import jakarta.validation.constraints.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,9 +11,10 @@ import org.upnext.sharedlibrary.Enums.PaymentStatus;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderPaymentDto {
-    private Long orderId;
-    private Long userId;
-    private Double totalCost;
-    private PaymentStatus paymentStatus;
+public class OrderPaymentRequest {
+
+    @NotNull(message = "Payment method cannot be null")
+    private PaymentMethod paymentMethod;
+
+
 }
