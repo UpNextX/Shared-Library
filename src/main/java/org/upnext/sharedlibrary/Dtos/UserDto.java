@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -31,5 +33,5 @@ public class UserDto {
             regexp = "^(ADMIN|USER)$",
             message = "Role must be one of: ADMIN, USER, MANAGER, CUSTOMER"
     )
-    private String role;
+    private List<String> role;
 }
