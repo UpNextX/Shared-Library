@@ -8,4 +8,5 @@ import lombok.Data;
 public class SuccessfulPaymentEvent {
     private Long userId;
     private Long orderId;
+    private String paymentTransactionId;
 }

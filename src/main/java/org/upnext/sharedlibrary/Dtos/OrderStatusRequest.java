@@ -12,7 +12,6 @@ import org.upnext.sharedlibrary.Enums.PaymentStatus;
 @NoArgsConstructor
 @Builder
 public class OrderStatusRequest {
-    Long orderId;
     OrderStatus orderStatus;
     PaymentStatus paymentStatus;
 }
